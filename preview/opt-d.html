@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Lato:wght@300;400;700&family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Florist","name":"Hello Flowers 澳門花店","telephone":"+85366110880","address":{"@type":"PostalAddress","streetAddress":"澳門俾利喇街 89 號歡樂大廈地下 A 舖","addressLocality":"Macau","addressCountry":"MO"},"openingHours":"Mo-Su 10:00-19:30","sameAs":["https://www.instagram.com/helloflowersmacau2019"],"priceRange":"$$","areaServed":"Macau"}</script>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -20,6 +21,50 @@ h1,h2,h3{text-wrap:balance;margin:0}
 .mbtn:hover{opacity:.72}
 @media(max-width:980px){.mbtn{display:inline-flex}}
 .mock{background:#0f0f0f;color:#bdb8b2;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;text-align:center;padding:8px 10px}
+.fx{padding:64px 0 4px}
+.fxhead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.fxhead h2{font-size:20px;font-weight:600;letter-spacing:.02em;text-transform:none}
+.fxhead p{margin:0;font-size:12.5px;opacity:.55}
+.fxhead.secgap{margin-top:38px}
+.fxbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:16px 0;border-top:1px solid rgba(140,140,140,.32);border-bottom:1px solid rgba(140,140,140,.32)}
+.fxlabel{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.5;margin-right:4px}
+.fxchip{border:1px solid rgba(140,140,140,.45);padding:9px 14px;font-size:12.5px;line-height:1}
+.fxchip:hover{background:rgba(140,140,140,.14)}
+.fxchip.on{box-shadow:inset 0 0 0 1.5px currentColor;font-weight:600}
+.fxsw{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;opacity:.8}
+.fxsel{font:inherit;font-size:12.5px;padding:9px 12px;border:1px solid rgba(140,140,140,.45);background:transparent;color:inherit}
+.fxcount{margin-left:auto;font-size:12.5px;opacity:.55}
+.fx3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fxstep{border:1px solid rgba(140,140,140,.32);padding:24px;display:flex;flex-direction:column;gap:10px}
+.fxstep .n{font-size:10.5px;letter-spacing:.26em;opacity:.5}
+.fxstep b{font-size:17px;font-weight:600;letter-spacing:.02em}
+.fxstep p{margin:0;font-size:13px;line-height:1.85;opacity:.72}
+.fxpicks{display:flex;flex-direction:column;gap:7px;font-size:12.5px}
+.fxpicks span{border-left:2px solid rgba(140,140,140,.6);padding-left:9px;opacity:.8}
+.fxdate{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:4px 0}
+.dpill{border:1px solid rgba(140,140,140,.45);padding:9px 4px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.dpill span{font-size:10.5px;opacity:.6}
+.dpill b{font-size:16px;font-weight:600;line-height:1.1}
+.dpill.on{box-shadow:inset 0 0 0 1.5px currentColor}
+.fxcheck{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fxcheck input[type=text]{font:inherit;font-size:13px;padding:11px 13px;border:1px solid rgba(140,140,140,.45);background:transparent;color:inherit;min-width:170px;flex:1}
+.fxta{font:inherit;font-size:13px;line-height:1.8;padding:12px 13px;border:1px solid rgba(140,140,140,.45);background:transparent;color:inherit;width:100%;resize:vertical}
+.fxbtn{border:1px solid currentColor;background:transparent;color:inherit;padding:11px 17px;font:inherit;font-size:12.5px;font-weight:600;letter-spacing:.03em;cursor:pointer}
+.fxbtn:hover{background:rgba(140,140,140,.16)}
+.fxnote{font-size:11.5px;opacity:.5;margin:0}
+.fxsub{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fxsubti{border:1px solid rgba(140,140,140,.32);padding:26px;display:flex;flex-direction:column;gap:10px}
+.fxsubti b{font-size:18px;font-weight:600}
+.fxsubti p{margin:0;font-size:13px;line-height:1.85;opacity:.72}
+.fxprice{font-size:12.5px;letter-spacing:.08em;opacity:.6}
+.fxlink{align-self:flex-start;font-size:12.5px;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:3px}
+.fxig{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.fxig img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.fxrev{border:1px solid rgba(140,140,140,.32);padding:22px;margin-top:16px;display:flex;flex-direction:column;gap:9px}
+.fxrev b{font-size:16px}
+.fxrev p{margin:0;font-size:13px;line-height:1.85;opacity:.72;max-width:70ch}
+@media(max-width:980px){.fx3,.fxsub{grid-template-columns:1fr}.fxig{grid-template-columns:repeat(3,1fr)}.fxcount{margin-left:0}}
+
 
 body{background:#fff;color:#1b1919;font-family:"Lato","Noto Sans TC",Helvetica,Arial,sans-serif;font-weight:400;font-feature-settings:"palt" 1}
 h1,h2,h3,.blat,.oc b,.ptile b,.ftr b{font-family:"Merriweather","Noto Serif TC",Georgia,serif}
@@ -226,6 +271,54 @@ h2 small{font-family:"Lato",sans-serif;font-size:11.5px;font-weight:400;letter-s
   <div class="ptile"><b>開張花籃</b><p>公司、店舖開張，講低預算同日期就得，專人同你對款式。</p><a href="#">睇花籃 →</a></div>
   <div class="ptile alt"><b>長期客戶</b><p>前台擺花、定期送花、節日批量，可安排月計方案。</p><a href="#">傾方案 →</a></div>
 </div></section>
+<section class="fx"><div class="wrap">
+  <div class="fxhead"><h2>搵花工具</h2><p>篩選 ＋ 排序（Bloom &amp; Wild、Interflora 都有）</p></div>
+  <div class="fxbar">
+    <span class="fxlabel">花種</span>
+    <a class="fxchip on" href="#">全部</a><a class="fxchip" href="#">玫瑰</a><a class="fxchip" href="#">滿天星</a><a class="fxchip" href="#">百合</a><a class="fxchip" href="#">向日葵</a>
+    <span class="fxlabel">價錢</span><a class="fxchip" href="#">$500 以下</a><a class="fxchip" href="#">$500–800</a><a class="fxchip" href="#">$800 以上</a>
+    <label class="fxsw"><input type="checkbox" checked> 可即日送</label>
+    <select class="fxsel" aria-label="排序"><option>人氣排序</option><option>價錢：低至高</option><option>價錢：高至低</option><option>最新上架</option></select>
+    <span class="fxcount">58 款中嘅 12 款</span>
+  </div>
+
+  <div class="fxhead secgap"><h2>落單三步（唔使開帳戶）</h2><p>揀花 → 揀送貨日 → 留花卡訊息</p></div>
+  <div class="fx3">
+    <div class="fxstep"><span class="n">STEP 01</span><b>揀花禮</b><p>睇中邊款撳一下加入清單，可以一次揀幾款再問。</p>
+      <div class="fxpicks"><span>精選鮮花花束</span><span>＋ 加購玻璃花瓶</span><span>＋ 朱古力／氣球</span></div></div>
+    <div class="fxstep"><span class="n">STEP 02</span><b>揀送貨日同地區</b><p>撳日子睇有冇位，再輸入地區即時查送唔送到。</p>
+      <div class="fxdate">
+        <a class="dpill on" href="#"><span>今日</span><b>20</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>明日</span><b>21</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>後日</span><b>22</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>週三</span><b>23</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>週四</span><b>24</b><span>9 月</span></a>
+      </div>
+      <div class="fxcheck"><input type="text" placeholder="例：氹仔 基馬拉斯大馬路" aria-label="送貨地區"><button class="fxbtn" type="button">查吓送唔送到</button></div>
+      <p class="fxnote">澳門半島 · 氹仔 · 路環；離島同指定時間另外報價。</p></div>
+    <div class="fxstep"><span class="n">STEP 03</span><b>留花卡訊息</b><p>打低想寫嘅字，手寫花卡隨花附上。</p>
+      <textarea class="fxta" rows="4" placeholder="例：生日快樂，多謝你一直咁支持我 🎂"></textarea>
+      <div class="fxcheck"><button class="fxbtn" type="button">Send 去 WeChat 落單</button><span class="fxnote">送出前先報價，確認先過數。</span></div></div>
+  </div>
+
+  <div class="fxhead secgap"><h2>訂閱制（定期送花）</h2><p>Bloom &amp; Wild、Floom 主打；啱公司前台同屋企</p></div>
+  <div class="fxsub">
+    <div class="fxsubti"><b>每週一束</b><p>每星期同一日送到，花藝師揀當週最新鮮嘅花材。</p><span class="fxprice">月費另議（示範）</span><a class="fxlink" href="#">問詳情 →</a></div>
+    <div class="fxsubti"><b>每兩週一束</b><p>隔星期送，啱細公司前台或者想慳少少嘅客人。</p><span class="fxprice">月費另議（示範）</span><a class="fxlink" href="#">問詳情 →</a></div>
+  </div>
+
+  <div class="fxhead secgap"><h2>Instagram ＋ 真實評價</h2><p>唔自製星級，評價直接連 Google</p></div>
+  <div class="fxig">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DW1WYJ6Exzt.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWnN6kZk6ww.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWBwmY7DZMQ.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DS_pI32E9ki.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DPs06BYE2JK.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DNjyaRRI_10.jpg" alt="IG 客人相片" loading="lazy">
+  </div>
+  <div class="fxrev"><b>想睇真評語？</b><p>我哋唔會自己寫好評。喺 Google Maps 睇我哋商家檔案嘅真實評價，或者上 IG @helloflowersmacau2019 睇客人 tag 嘅相。</p><a class="fxlink" href="#">Google Maps 商家檔案 →</a></div>
+</div></section>
+
 <footer class="ftr"><div class="wrap fgrid">
   <div><b>Hello Flowers</b><p>澳門俾利喇街 89 號歡樂大廈地下 A 舖<br>每日 10:00 – 19:30 · 6611 0880<br>IG @helloflowersmacau2019</p></div>
   <div><h4>按場合</h4><a href="#">生日・日常</a><a href="#">開張・升職</a><a href="#">情人節</a><a href="#">母親節</a></div>

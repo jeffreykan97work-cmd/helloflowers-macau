@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>C · Haute Florist 風 — 設計樣版 v2</title>
+<title>C · Haute Florist 風 · 中文思源黑體 — 設計樣版 v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Florist","name":"Hello Flowers 澳門花店","telephone":"+85366110880","address":{"@type":"PostalAddress","streetAddress":"澳門俾利喇街 89 號歡樂大廈地下 A 舖","addressLocality":"Macau","addressCountry":"MO"},"openingHours":"Mo-Su 10:00-19:30","sameAs":["https://www.instagram.com/helloflowersmacau2019"],"priceRange":"$$","areaServed":"Macau"}</script>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -20,18 +21,79 @@ h1,h2,h3{text-wrap:balance;margin:0}
 .mbtn:hover{opacity:.72}
 @media(max-width:980px){.mbtn{display:inline-flex}}
 .mock{background:#0f0f0f;color:#bdb8b2;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;text-align:center;padding:8px 10px}
+.fx{padding:64px 0 4px}
+.fxhead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.fxhead h2{font-size:20px;font-weight:600;letter-spacing:.02em;text-transform:none}
+.fxhead p{margin:0;font-size:12.5px;opacity:.55}
+.fxhead.secgap{margin-top:38px}
+.fxbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:16px 0;border-top:1px solid rgba(140,140,140,.32);border-bottom:1px solid rgba(140,140,140,.32)}
+.fxlabel{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.5;margin-right:4px}
+.fxchip{border:1px solid rgba(140,140,140,.45);padding:9px 14px;font-size:12.5px;line-height:1}
+.fxchip:hover{background:rgba(140,140,140,.14)}
+.fxchip.on{box-shadow:inset 0 0 0 1.5px currentColor;font-weight:600}
+.fxsw{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;opacity:.8}
+.fxsel{font:inherit;font-size:12.5px;padding:9px 12px;border:1px solid rgba(140,140,140,.45);background:transparent;color:inherit}
+.fxcount{margin-left:auto;font-size:12.5px;opacity:.55}
+.fx3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fxstep{border:1px solid rgba(140,140,140,.32);padding:24px;display:flex;flex-direction:column;gap:10px}
+.fxstep .n{font-size:10.5px;letter-spacing:.26em;opacity:.5}
+.fxstep b{font-size:17px;font-weight:600;letter-spacing:.02em}
+.fxstep p{margin:0;font-size:13px;line-height:1.85;opacity:.72}
+.fxpicks{display:flex;flex-direction:column;gap:7px;font-size:12.5px}
+.fxpicks span{border-left:2px solid rgba(140,140,140,.6);padding-left:9px;opacity:.8}
+.fxdate{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:4px 0}
+.dpill{border:1px solid rgba(140,140,140,.45);padding:9px 4px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.dpill span{font-size:10.5px;opacity:.6}
+.dpill b{font-size:16px;font-weight:600;line-height:1.1}
+.dpill.on{box-shadow:inset 0 0 0 1.5px currentColor}
+.fxcheck{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fxcheck input[type=text]{font:inherit;font-size:13px;padding:11px 13px;border:1px solid rgba(140,140,140,.45);background:transparent;color:inherit;min-width:170px;flex:1}
+.fxta{font:inherit;font-size:13px;line-height:1.8;padding:12px 13px;border:1px solid rgba(140,140,140,.45);background:transparent;color:inherit;width:100%;resize:vertical}
+.fxbtn{border:1px solid currentColor;background:transparent;color:inherit;padding:11px 17px;font:inherit;font-size:12.5px;font-weight:600;letter-spacing:.03em;cursor:pointer}
+.fxbtn:hover{background:rgba(140,140,140,.16)}
+.fxnote{font-size:11.5px;opacity:.5;margin:0}
+.fxsub{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fxsubti{border:1px solid rgba(140,140,140,.32);padding:26px;display:flex;flex-direction:column;gap:10px}
+.fxsubti b{font-size:18px;font-weight:600}
+.fxsubti p{margin:0;font-size:13px;line-height:1.85;opacity:.72}
+.fxprice{font-size:12.5px;letter-spacing:.08em;opacity:.6}
+.fxlink{align-self:flex-start;font-size:12.5px;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:3px}
+.fxig{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.fxig img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.fxrev{border:1px solid rgba(140,140,140,.32);padding:22px;margin-top:16px;display:flex;flex-direction:column;gap:9px}
+.fxrev b{font-size:16px}
+.fxrev p{margin:0;font-size:13px;line-height:1.85;opacity:.72;max-width:70ch}
+@media(max-width:980px){.fx3,.fxsub{grid-template-columns:1fr}.fxig{grid-template-columns:repeat(3,1fr)}.fxcount{margin-left:0}}
+
 
 body{background:#0e0e0e;color:#f4f1ea;font-family:"Lato","Noto Sans TC",sans-serif;font-weight:300}
-h1,h2,h3,.blat,.hlat,.oc b,.ptile b,.ftr b{font-family:"Playfair Display","Noto Serif TC",Georgia,serif;font-weight:400}
+h1,h2,h3,.blat,.hlat,.oc b,.ptile b,.ftr b{font-family:"Playfair Display","Noto Sans TC",Georgia,serif;font-weight:400}
+/* 拉丁用 Playfair，漢字落思源黑體（Noto Sans TC）；中文用 500 免得過細 */
+.trust b,.oc b,.ptile b,.ftr b,.card h3,.fxstep b,.fxsubti b{font-family:"Noto Sans TC","Playfair Display",sans-serif;font-weight:500}
+.card h3{font-size:15.5px;letter-spacing:.03em}
+h1{font-weight:500;letter-spacing:.03em}
+h2,.fxhead h2{font-family:"Noto Sans TC","Lato",sans-serif;font-weight:500;letter-spacing:.22em}
+/* 深底（黑金）提高對比：金線代替灰線、placeholder 調亮、細字唔好灰到融入背景 */
+.fxstep,.fxsubti,.fxrev,.fxbar{border-color:rgba(198,168,124,.34)}
+.fxchip,.dpill,.fxsel,.fxcheck input[type=text],.fxta{border-color:rgba(198,168,124,.52)}
+.fxchip:hover,.fxbtn:hover{background:rgba(198,168,124,.14)}
+.fxcheck input[type=text]::placeholder,.fxta::placeholder{color:rgba(244,241,234,.5)}
+.dpill span{color:rgba(198,168,124,.9);opacity:1}
+.dpill.on{box-shadow:inset 0 0 0 1.5px #c6a87c}
+.fxchip.on{box-shadow:inset 0 0 0 1.5px #c6a87c}
+.fxnote,.fxprice,.fxcount,.fxlabel,.fxhead p{opacity:.74}
+.fxstep p,.fxsubti p,.fxrev p{opacity:.82}
+.fxbtn{border-color:#c6a87c;color:#c6a87c}
+.fxta{background:rgba(198,168,124,.05)}
 .mock{background:#c6a87c;color:#141210;letter-spacing:.34em}
 .hdr{background:#0e0e0e;border-bottom:1px solid rgba(198,168,124,.26)}
 .hdrin{display:flex;align-items:center;gap:30px;padding:26px 0}
 .blat{display:block;font-size:27px;letter-spacing:.16em;text-transform:uppercase}
 .bcjk{display:block;font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:#c6a87c;margin-top:5px}
-.nav{display:flex;gap:26px;margin-left:auto;font-family:"Lato",sans-serif;font-size:10.5px;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:#cdc5b8}
+.nav{display:flex;gap:26px;margin-left:auto;font-family:"Lato","Noto Sans TC",sans-serif;font-size:10.5px;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:#cdc5b8}
 .nav a i{font-style:normal;color:#c6a87c;margin-left:5px;font-size:9.5px}
 .nav a:hover{color:#c6a87c}
-.wx{font-family:"Lato",sans-serif;border:1px solid #c6a87c;color:#c6a87c;padding:14px 22px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;transition:background .3s,color .3s}
+.wx{font-family:"Lato","Noto Sans TC",sans-serif;border:1px solid #c6a87c;color:#c6a87c;padding:14px 22px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;transition:background .3s,color .3s}
 .wx:hover{background:#c6a87c;color:#141210}
 .hero{position:relative;overflow:hidden}
 .hgrid{position:relative;z-index:2;padding:104px 0 84px;max-width:1180px}
@@ -39,55 +101,55 @@ h1,h2,h3,.blat,.hlat,.oc b,.ptile b,.ftr b{font-family:"Playfair Display","Noto 
 .hfig img{height:100%;width:100%;object-fit:cover;opacity:.6}
 .hfig::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0e0e0e 26%,rgba(14,14,14,.78) 52%,rgba(14,14,14,.12))}
 .hfig figcaption{display:none}
-.eyebrow{font-family:"Lato",sans-serif;font-size:10.5px;letter-spacing:.42em;text-transform:uppercase;color:#c6a87c;margin:0 0 24px}
+.eyebrow{font-family:"Lato","Noto Sans TC",sans-serif;font-size:10.5px;letter-spacing:.42em;text-transform:uppercase;color:#c6a87c;margin:0 0 24px}
 h1{font-size:clamp(40px,5.2vw,72px);line-height:1.1;letter-spacing:.005em;max-width:14ch}
 .hlat{font-style:italic;font-size:21px;color:#c6a87c;margin:20px 0 22px;letter-spacing:.02em}
 .lede{font-size:15px;line-height:2;color:#b5ada1;max-width:44ch;margin:0 0 34px}
 .cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn{font-family:"Lato",sans-serif;padding:17px 34px;font-size:10.5px;font-weight:400;letter-spacing:.3em;text-transform:uppercase}
+.btn{font-family:"Lato","Noto Sans TC",sans-serif;padding:17px 34px;font-size:10.5px;font-weight:400;letter-spacing:.3em;text-transform:uppercase}
 .primary{background:#c6a87c;color:#141210}
 .ghost{border:1px solid rgba(244,241,234,.4);color:#f4f1ea}
-.mini{display:flex;gap:26px;list-style:none;padding:30px 0 0;margin:0;font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8f887d;flex-wrap:wrap}
+.mini{display:flex;gap:26px;list-style:none;padding:30px 0 0;margin:0;font-family:"Lato","Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8f887d;flex-wrap:wrap}
 .trust{border-top:1px solid rgba(198,168,124,.22);border-bottom:1px solid rgba(198,168,124,.22)}
 .trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0;padding:0}
 .trust li{padding:34px 28px 34px 0;border-right:1px solid rgba(198,168,124,.16)}
 .trust li:last-child{border-right:0}
 .trust .n{font-family:"Playfair Display",serif;font-size:13px;color:#c6a87c;letter-spacing:.2em}
-.trust b{display:block;font-family:"Playfair Display","Noto Serif TC",serif;font-size:18px;margin:10px 0 7px}
+.trust b{display:block;font-family:"Playfair Display","Noto Sans TC",serif;font-size:18px;margin:10px 0 7px}
 .trust small{font-size:12px;color:#8f887d;line-height:1.9;letter-spacing:.02em}
 .sec{padding:76px 0 4px}
 .sechead{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid rgba(198,168,124,.26);padding-bottom:16px;margin-bottom:32px}
-h2{font-family:"Lato",sans-serif;font-size:15px;font-weight:500;letter-spacing:5px;text-transform:uppercase;color:#f4f1ea}
-.sechead a{font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c6a87c}
+h2{font-family:"Lato","Noto Sans TC",sans-serif;font-size:15px;font-weight:500;letter-spacing:5px;text-transform:uppercase;color:#f4f1ea}
+.sechead a{font-family:"Lato","Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c6a87c}
 .occ{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid rgba(198,168,124,.24)}
 .oc{padding:34px 12px;text-align:center;border-right:1px solid rgba(198,168,124,.16);transition:background .4s}
 .oc:last-child{border-right:0}
 .oc:hover{background:rgba(198,168,124,.07)}
 .oc b{display:block;font-size:17px;letter-spacing:.03em;margin-bottom:7px}
-.oc span{font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8f887d}
+.oc span{font-family:"Lato","Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8f887d}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 20px}
 .card{background:transparent}
 .thumb{position:relative;display:block;overflow:hidden}
 .thumb img{aspect-ratio:4/5;object-fit:cover;width:100%;opacity:.94;transition:opacity .7s,transform 1.1s cubic-bezier(.2,.7,.2,1)}
 .card:hover .thumb img{opacity:1;transform:scale(1.05)}
-.badge{position:absolute;bottom:0;left:0;background:rgba(14,14,14,.88);color:#c6a87c;font-family:"Lato",sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:8px 13px}
+.badge{position:absolute;bottom:0;left:0;background:rgba(14,14,14,.88);color:#c6a87c;font-family:"Lato","Noto Sans TC",sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:8px 13px}
 .cbody{padding:18px 0 22px}
-.card h3{font-family:"Noto Serif TC","Playfair Display",serif;font-size:16.5px;line-height:1.5;letter-spacing:.02em;margin-bottom:9px}
-.rate{display:block;font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.22em;color:#c6a87c;margin-bottom:9px}
+.card h3{font-family:"Noto Sans TC","Playfair Display",serif;font-size:16.5px;line-height:1.5;letter-spacing:.02em;margin-bottom:9px}
+.rate{display:block;font-family:"Lato","Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.22em;color:#c6a87c;margin-bottom:9px}
 .rate b{color:#8f887d;font-weight:400}
-.price{font-family:"Lato",sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#f4f1ea;margin:0}
+.price{font-family:"Lato","Noto Sans TC",sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#f4f1ea;margin:0}
 .promo{padding:80px 0 6px}
 .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(198,168,124,.24)}
 .ptile{padding:40px}
 .ptile.alt{background:rgba(198,168,124,.05);border-left:1px solid rgba(198,168,124,.24)}
 .ptile b{display:block;font-size:24px;letter-spacing:.04em;margin-bottom:14px}
 .ptile p{font-size:13.5px;line-height:2;color:#b5ada1;margin:0 0 18px;max-width:34ch}
-.ptile a{font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c6a87c;border-bottom:1px solid rgba(198,168,124,.5);padding-bottom:4px}
+.ptile a{font-family:"Lato","Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c6a87c;border-bottom:1px solid rgba(198,168,124,.5);padding-bottom:4px}
 .ftr{margin-top:84px;border-top:1px solid rgba(198,168,124,.24);padding:50px 0}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
 .ftr b{display:block;font-size:20px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
 .ftr p{font-size:12.5px;line-height:2.1;color:#8f887d;margin:0}
-.ftr h4{font-family:"Lato",sans-serif;font-size:10px;font-weight:400;letter-spacing:.32em;text-transform:uppercase;color:#c6a87c;margin:0 0 14px}
+.ftr h4{font-family:"Lato","Noto Sans TC",sans-serif;font-size:10px;font-weight:400;letter-spacing:.32em;text-transform:uppercase;color:#c6a87c;margin:0 0 14px}
 .ftr a{display:block;padding:4px 0;font-size:13px;color:#cdc5b8}
 .ftr a:hover{color:#f4f1ea}
 @media(max-width:980px){
@@ -103,7 +165,7 @@ h2{font-family:"Lato",sans-serif;font-size:15px;font-weight:500;letter-spacing:5
 </style>
 </head>
 <body>
-<div class="mock">Mockup C · Haute Florist 風 · 價錢同評價數字係示範，未上線</div>
+<div class="mock">Mockup C · Haute Florist 風 · 中文思源黑體 · 價錢同評價數字係示範，未上線</div>
 
 <header class="hdr">
   <div class="hdrin wrap">
@@ -222,6 +284,54 @@ h2{font-family:"Lato",sans-serif;font-size:15px;font-weight:500;letter-spacing:5
   <div class="ptile"><b>開張花籃</b><p>公司、店舖開張，講低預算同日期就得，專人同你對款式。</p><a href="#">睇花籃 →</a></div>
   <div class="ptile alt"><b>長期客戶</b><p>前台擺花、定期送花、節日批量，可安排月計方案。</p><a href="#">傾方案 →</a></div>
 </div></section>
+<section class="fx"><div class="wrap">
+  <div class="fxhead"><h2>搵花工具</h2><p>篩選 ＋ 排序（Bloom &amp; Wild、Interflora 都有）</p></div>
+  <div class="fxbar">
+    <span class="fxlabel">花種</span>
+    <a class="fxchip on" href="#">全部</a><a class="fxchip" href="#">玫瑰</a><a class="fxchip" href="#">滿天星</a><a class="fxchip" href="#">百合</a><a class="fxchip" href="#">向日葵</a>
+    <span class="fxlabel">價錢</span><a class="fxchip" href="#">$500 以下</a><a class="fxchip" href="#">$500–800</a><a class="fxchip" href="#">$800 以上</a>
+    <label class="fxsw"><input type="checkbox" checked> 可即日送</label>
+    <select class="fxsel" aria-label="排序"><option>人氣排序</option><option>價錢：低至高</option><option>價錢：高至低</option><option>最新上架</option></select>
+    <span class="fxcount">58 款中嘅 12 款</span>
+  </div>
+
+  <div class="fxhead secgap"><h2>落單三步（唔使開帳戶）</h2><p>揀花 → 揀送貨日 → 留花卡訊息</p></div>
+  <div class="fx3">
+    <div class="fxstep"><span class="n">STEP 01</span><b>揀花禮</b><p>睇中邊款撳一下加入清單，可以一次揀幾款再問。</p>
+      <div class="fxpicks"><span>精選鮮花花束</span><span>＋ 加購玻璃花瓶</span><span>＋ 朱古力／氣球</span></div></div>
+    <div class="fxstep"><span class="n">STEP 02</span><b>揀送貨日同地區</b><p>撳日子睇有冇位，再輸入地區即時查送唔送到。</p>
+      <div class="fxdate">
+        <a class="dpill on" href="#"><span>今日</span><b>20</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>明日</span><b>21</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>後日</span><b>22</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>週三</span><b>23</b><span>9 月</span></a>
+        <a class="dpill" href="#"><span>週四</span><b>24</b><span>9 月</span></a>
+      </div>
+      <div class="fxcheck"><input type="text" placeholder="例：氹仔 基馬拉斯大馬路" aria-label="送貨地區"><button class="fxbtn" type="button">查吓送唔送到</button></div>
+      <p class="fxnote">澳門半島 · 氹仔 · 路環；離島同指定時間另外報價。</p></div>
+    <div class="fxstep"><span class="n">STEP 03</span><b>留花卡訊息</b><p>打低想寫嘅字，手寫花卡隨花附上。</p>
+      <textarea class="fxta" rows="4" placeholder="例：生日快樂，多謝你一直咁支持我 🎂"></textarea>
+      <div class="fxcheck"><button class="fxbtn" type="button">Send 去 WeChat 落單</button><span class="fxnote">送出前先報價，確認先過數。</span></div></div>
+  </div>
+
+  <div class="fxhead secgap"><h2>訂閱制（定期送花）</h2><p>Bloom &amp; Wild、Floom 主打；啱公司前台同屋企</p></div>
+  <div class="fxsub">
+    <div class="fxsubti"><b>每週一束</b><p>每星期同一日送到，花藝師揀當週最新鮮嘅花材。</p><span class="fxprice">月費另議（示範）</span><a class="fxlink" href="#">問詳情 →</a></div>
+    <div class="fxsubti"><b>每兩週一束</b><p>隔星期送，啱細公司前台或者想慳少少嘅客人。</p><span class="fxprice">月費另議（示範）</span><a class="fxlink" href="#">問詳情 →</a></div>
+  </div>
+
+  <div class="fxhead secgap"><h2>Instagram ＋ 真實評價</h2><p>唔自製星級，評價直接連 Google</p></div>
+  <div class="fxig">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DW1WYJ6Exzt.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWnN6kZk6ww.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWBwmY7DZMQ.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DS_pI32E9ki.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DPs06BYE2JK.jpg" alt="IG 客人相片" loading="lazy">
+    <img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DNjyaRRI_10.jpg" alt="IG 客人相片" loading="lazy">
+  </div>
+  <div class="fxrev"><b>想睇真評語？</b><p>我哋唔會自己寫好評。喺 Google Maps 睇我哋商家檔案嘅真實評價，或者上 IG @helloflowersmacau2019 睇客人 tag 嘅相。</p><a class="fxlink" href="#">Google Maps 商家檔案 →</a></div>
+</div></section>
+
 <footer class="ftr"><div class="wrap fgrid">
   <div><b>Hello Flowers</b><p>澳門俾利喇街 89 號歡樂大廈地下 A 舖<br>每日 10:00 – 19:30 · 6611 0880<br>IG @helloflowersmacau2019</p></div>
   <div><h4>按場合</h4><a href="#">生日・日常</a><a href="#">開張・升職</a><a href="#">情人節</a><a href="#">母親節</a></div>
