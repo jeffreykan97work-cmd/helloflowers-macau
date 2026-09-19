@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E · 日比谷花壇 風（日式極簡） — 設計樣版</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;color:#1b1b1b;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,92vw);margin:0 auto}
+.mock{background:#111;color:#fff;font-size:11.5px;letter-spacing:.16em;text-align:center;padding:7px 10px;font-weight:500}
+
+body{background:#fff;color:#222}
+.mock{background:#333}
+.hdr{background:#fff;border-bottom:1px solid #e6e6e6}
+.hdrin{display:flex;align-items:center;gap:22px;padding:18px 0}
+.bmark{font-size:20px;font-weight:600;letter-spacing:.16em;display:block}
+.brand small{font-size:10.5px;color:#999;letter-spacing:.12em}
+.nav{display:flex;gap:20px;margin-left:auto;font-size:13px;color:#444;letter-spacing:.06em}
+.nav a:hover{color:#000;border-bottom:1px solid #000}
+.wx{border:1px solid #222;padding:11px 18px;font-size:12.5px;letter-spacing:.1em}
+.subrow{background:#fafafa;border-top:1px solid #f0f0f0}
+.axrow{display:flex;gap:22px;padding:10px 0;font-size:12px;color:#777;letter-spacing:.1em}
+.ax:hover{color:#000}
+.ticker{background:#fff;border-bottom:1px solid #eee;color:#666;font-size:12.5px;letter-spacing:.1em;text-align:center;padding:10px}
+.hero{padding:46px 0 40px;border-bottom:1px solid #eee}
+.hgrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:38px;align-items:center}
+.eyebrow{font-size:11.5px;letter-spacing:.24em;color:#888;margin:0 0 16px}
+h1{font-size:41px;line-height:1.32;font-weight:500;letter-spacing:.04em;margin:0 0 18px}
+.lede{font-size:14.5px;line-height:1.95;color:#666;max-width:44ch;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 26px;font-size:13.5px;letter-spacing:.1em}
+.primary{background:#111;color:#fff}
+.ghost{border:1px solid #ccc;color:#222}
+.mini{display:flex;gap:20px;list-style:none;padding:24px 0 0;margin:0;font-size:12px;color:#888;letter-spacing:.06em;flex-wrap:wrap}
+.hfig{margin:0}
+.hfig img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.hfig figcaption{font-size:12px;color:#888;padding:12px 0 0;letter-spacing:.06em}
+.trust{border-bottom:1px solid #eee}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0;padding:0}
+.trust li{padding:24px 22px 24px 0;border-right:1px solid #f0f0f0}
+.trust li:last-child{border-right:0}
+.trust .n{font-size:11px;color:#aaa;letter-spacing:.2em}
+.trust b{font-size:14.5px;font-weight:600;display:block;margin:5px 0 4px;letter-spacing:.04em}
+.trust small{font-size:12px;color:#888;line-height:1.75}
+.sec{padding:44px 0 4px}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #e6e6e6;padding-bottom:12px;margin-bottom:24px}
+h2{font-size:23px;font-weight:500;letter-spacing:.12em;margin:0}
+.sechead a{font-size:12.5px;color:#666;letter-spacing:.08em}
+.occ{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:#eee;border:1px solid #eee}
+.oc{background:#fff;padding:24px 12px;text-align:center}
+.oc:hover{background:#fafafa}
+.oc b{display:block;font-size:14px;font-weight:500;letter-spacing:.08em}
+.oc span{font-size:11.5px;color:#999;letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#eee;border:1px solid #eee}
+.card{background:#fff}
+.thumb{position:relative;display:block;overflow:hidden}
+.thumb img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.badge{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.94);color:#333;font-size:10.5px;letter-spacing:.16em;padding:4px 9px}
+.cbody{padding:16px 15px 22px}
+.card h3{font-size:13.5px;font-weight:500;line-height:1.6;letter-spacing:.04em;margin:0 0 7px}
+.rate{font-size:11px;color:#b08d3f;letter-spacing:.1em;display:block;margin-bottom:7px}
+.rate b{color:#888}
+.price{font-size:13.5px;color:#333;letter-spacing:.08em;margin:0}
+.promo{padding:48px 0 6px}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#eee;border:1px solid #eee}
+.ptile{background:#fff;padding:30px}
+.ptile.alt{background:#fafafa}
+.ptile b{font-size:18px;font-weight:500;letter-spacing:.1em;display:block;margin-bottom:10px}
+.ptile p{font-size:13.5px;line-height:1.9;color:#666;margin:0 0 14px;max-width:34ch}
+.ptile a{font-size:12.5px;color:#111;border-bottom:1px solid #111;padding-bottom:2px;letter-spacing:.08em}
+.ftr{margin-top:52px;border-top:1px solid #e6e6e6;padding:36px 0;font-size:12.5px;color:#777}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:24px}
+.ftr b{font-size:15px;font-weight:600;color:#222;letter-spacing:.1em;display:block;margin-bottom:10px}
+.ftr p{line-height:1.95;margin:0}
+.ftr h4{font-size:11px;letter-spacing:.2em;color:#999;margin:0 0 11px;font-weight:500}
+.ftr a{display:block;padding:3px 0}
+.ftr a:hover{color:#000}
+@media(max-width:980px){
+ .hgrid{grid-template-columns:1fr;gap:24px} h1{font-size:28px;line-height:1.45} .grid{grid-template-columns:repeat(2,1fr)}
+ .occ{grid-template-columns:repeat(3,1fr)} .trust ul{grid-template-columns:1fr 1fr}
+ .trust li{border-right:0;border-bottom:1px solid #f0f0f0;padding:18px 0}
+ .pgrid,.fgrid{grid-template-columns:1fr} .nav,.subrow{display:none} .wx{margin-left:auto;font-size:11.5px;padding:10px 13px}
+}
+
+</style>
+</head>
+<body>
+<div class="mock">設計樣版 MOCKUP E · 日比谷花壇 風（日式極簡） — 價錢／評價數字係示範，未上線</div>
+<header class="hdr">
+  <div class="hdrin wrap">
+    <a class="brand" href="#"><span class="bmark">Hello Flowers</span><small>澳門花店 · since 2019</small></a>
+    <nav class="nav">        <a href="#">主頁</a>
+        <a href="#">花禮一覽</a>
+        <a href="#">按場合</a>
+        <a href="#">關於我們</a>
+        <a href="#">送貨</a>
+        <a href="#">自取</a>
+        <a href="#">聯絡</a></nav>
+    <a class="wx" href="#">WeChat 落單</a>
+  </div>
+  <div class="subrow"><div class="wrap axrow">        <a class="ax" href="#">按場合</a>
+        <a class="ax" href="#">按花種</a>
+        <a class="ax" href="#">按預算</a>
+        <a class="ax" href="#">按顏色</a></div></div>
+</header>
+<div class="ticker"><div class="wrap">今日落單 → 市區即日送到 ｜ 開張花籃・抱抱桶・蘭花 ｜ WeChat 落單有專人跟進</div></div>
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="hcopy">
+      <p class="eyebrow">澳門本地花店 · 人手綁製</p>
+      <h1>今日想送花，<br>交俾花藝師發辦</h1>
+      <p class="lede">講低場合、日子同預算，花藝師幫你揀當日最新鮮嘅花材，WeChat 一對一確認。</p>
+      <div class="cta"><a class="btn primary" href="#">睇花禮一覽</a><a class="btn ghost" href="#">WeChat 問價</a></div>
+      <ul class="mini"><li>當日新鮮花材</li><li>可到店自取</li><li>送到前可確認</li></ul>
+      
+    </div>
+    <figure class="hfig"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DbDXJdpD36m.jpg" alt="精選花束"><figcaption>精選鮮花花束｜花藝師發辦</figcaption></figure>
+  </div>
+</section>
+<section class="trust"><div class="wrap"><ul>        <li><span class="n">01</span><b>人手綁製</b><small>花藝師當日新鮮配搭</small></li>
+        <li><span class="n">02</span><b>WeChat 一對一</b><small>報價同建議花材</small></li>
+        <li><span class="n">03</span><b>自取或送貨</b><small>澳門市區同離島</small></li>
+        <li><span class="n">04</span><b>2019 年開業</b><small>澳門本地花店</small></li></ul></div></section>
+<section class="sec"><div class="wrap">
+  <div class="sechead"><h2>按場合揀花</h2><a href="#">全部場合 →</a></div>
+  <div class="occ">        <a class="oc" href="#"><b>生日・日常</b><span>花束</span></a>
+        <a class="oc" href="#"><b>開張・升職</b><span>花籃</span></a>
+        <a class="oc" href="#"><b>情人節</b><span>7 款</span></a>
+        <a class="oc" href="#"><b>母親節</b><span>14 款</span></a>
+        <a class="oc" href="#"><b>畢業</b><span>3 款</span></a>
+        <a class="oc" href="#"><b>蘭花送禮</b><span>4 款</span></a></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sechead"><h2>人氣花禮</h2><a href="#">睇全部 58 款 →</a></div>
+  <div class="grid">
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DbDXJdpD36m.jpg" alt="精選鮮花花束｜花藝師發辦" loading="lazy"><span class="badge">熱賣</span></a>
+        <div class="cbody">
+          <h3>精選鮮花花束｜花藝師發辦</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DW1WYJ6Exzt.jpg" alt="奶油向日葵花束" loading="lazy"><span class="badge">NEW</span></a>
+        <div class="cbody">
+          <h3>奶油向日葵花束</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWnN6kZk6ww.jpg" alt="沿路盛開花束｜季節鮮花花束" loading="lazy"><span class="badge">限量</span></a>
+        <div class="cbody">
+          <h3>沿路盛開花束｜季節鮮花花束</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWBwmY7DZMQ.jpg" alt="浪漫鬱金香混花花束" loading="lazy"><span class="badge">店長推介</span></a>
+        <div class="cbody">
+          <h3>浪漫鬱金香混花花束</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DS_pI32E9ki.jpg" alt="藍色蘭花混花花束" loading="lazy"></a>
+        <div class="cbody">
+          <h3>藍色蘭花混花花束</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DPs06BYE2JK.jpg" alt="幸福棒花💕" loading="lazy"><span class="badge">NEW</span></a>
+        <div class="cbody">
+          <h3>幸福棒花💕</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DNjyaRRI_10.jpg" alt="迷你花束系列｜Mini Bouquet" loading="lazy"></a>
+        <div class="cbody">
+          <h3>迷你花束系列｜Mini Bouquet</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DL8quruSm6Y.jpg" alt="Crybaby 花束｜不一樣的版本" loading="lazy"><span class="badge">熱賣</span></a>
+        <div class="cbody">
+          <h3>Crybaby 花束｜不一樣的版本</h3>
+          
+          <p class="price">HK$ 680 起</p>
+        </div>
+      </article>
+  </div>
+</div></section>
+<section class="promo"><div class="wrap pgrid">
+  <div class="ptile"><b>開張花籃</b><p>公司、店舖開張，講低預算同日期就得。</p><a href="#">睇花籃 →</a></div>
+  <div class="ptile alt"><b>長期客戶</b><p>前台擺花、定期送花，可安排月計方案。</p><a href="#">傾方案 →</a></div>
+</div></section>
+<footer class="ftr"><div class="wrap fgrid">
+  <div><b>Hello Flowers Macau</b><p>澳門俾利喇街 89 號歡樂大廈地下 A 舖<br>每日 10:00–19:30 · 6611 0880</p></div>
+  <div><h4>按場合</h4><a href="#">生日・日常</a><a href="#">開張・升職</a><a href="#">情人節</a><a href="#">母親節</a></div>
+  <div><h4>按花種</h4><a href="#">玫瑰</a><a href="#">鬱金香</a><a href="#">蝴蝶蘭</a><a href="#">康乃馨</a></div>
+  <div><h4>服務</h4><a href="#">送貨資訊</a><a href="#">到店自取</a><a href="#">聯絡我們</a><a href="#">IG @helloflowersmacau2019</a></div>
+</div></footer>
+</body>
+</html>
