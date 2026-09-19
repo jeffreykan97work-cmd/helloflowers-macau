@@ -59,7 +59,7 @@ WeChat 落單
   });
   chips.forEach(function(c){var on=c.getAttribute('data-cat')===state.cat;c.classList.toggle('is-on',on);c.setAttribute('aria-selected',on?'true':'false');});
   kchips.forEach(function(c){var on=c.getAttribute('data-kw')===state.kw;c.classList.toggle('is-on',on);c.setAttribute('aria-selected',on?'true':'false');});
-  if(cnt){cnt.textContent=(state.cat==='all'&&state.kw==='all')?('共 '+total+' 款已上架（2025-01 至今全部款式）'):('篩選中：'+label()+' 共 '+total+' 款 · 㩒「全部」重設');}
+  if(cnt){cnt.textContent=(state.cat==='all'&&state.kw==='all')?('共 '+total+' 款已上架（2025-01 至今全部款式）'):(total===0?('冇符合「'+label()+'」嘅款 — 試下㩒「全部」重設'):('篩選中：'+label()+' 共 '+total+' 款 · 㩒「全部」重設'));}
   if(push){try{
    var q=[];if(state.cat!=='all')q.push('c='+encodeURIComponent(state.cat));if(state.kw!=='all')q.push('k='+encodeURIComponent(state.kw));
    history.replaceState(null,'',location.pathname+(q.length?'?'+q.join('&'):''));
