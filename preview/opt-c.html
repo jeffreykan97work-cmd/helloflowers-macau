@@ -4,144 +4,159 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>C · Haute Florist 風（黑金奢華） — 設計樣版</title>
+<title>C · Haute Florist 風 — 設計樣版 v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400&display=swap">
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;color:#1b1b1b;background:#fff;-webkit-font-smoothing:antialiased}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:#111;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-.wrap{width:min(1200px,92vw);margin:0 auto}
-.mock{background:#111;color:#fff;font-size:11.5px;letter-spacing:.16em;text-align:center;padding:7px 10px;font-weight:500}
+h1,h2,h3{text-wrap:balance;margin:0}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.mbtn{display:none;align-items:center;gap:8px;font-family:inherit;font-size:12px;font-weight:600;letter-spacing:.12em;border:1px solid currentColor;background:transparent;color:inherit;padding:10px 14px;border-radius:999px;cursor:pointer}
+.mbtn:hover{opacity:.72}
+@media(max-width:980px){.mbtn{display:inline-flex}}
+.mock{background:#0f0f0f;color:#bdb8b2;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;text-align:center;padding:8px 10px}
 
-body{background:#0d0d0d;color:#f2efe9;font-family:"Noto Serif TC","Songti TC","PingFang TC","PMingLiU",serif}
-.mock{background:#c8a97e;color:#12100e;letter-spacing:.3em}
-.hdr{background:#0d0d0d;border-bottom:1px solid rgba(200,169,126,.3)}
-.hdrin{display:flex;align-items:center;gap:24px;padding:22px 0}
-.bmark{font-family:"Noto Serif TC","Songti TC","PingFang TC","PMingLiU",serif;font-size:26px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;display:block;color:#f6f2ea}
-.brand small{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#c8a97e}
-.nav{display:flex;gap:22px;margin-left:auto;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#cfc7bb}
-.nav a:hover{color:#c8a97e}
-.wx{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;border:1px solid #c8a97e;color:#c8a97e;padding:12px 20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
-.subrow{border-top:1px solid rgba(200,169,126,.16)}
-.axrow{display:flex;gap:24px;padding:11px 0;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8d857a}
-.ax:hover{color:#c8a97e}
-.ticker{background:#161412;color:#c8a97e;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.28em;text-transform:uppercase;text-align:center;padding:12px;border-bottom:1px solid rgba(200,169,126,.2)}
-.hero{position:relative;padding:0;background:#0d0d0d}
-.hgrid{display:block}
-.hcopy{position:relative;z-index:2;padding:96px 0 66px;max-width:660px}
-.hfig{position:absolute;inset:0 0 0 auto;width:56%;margin:0}
-.hfig img{height:100%;width:100%;object-fit:cover;opacity:.55}
+body{background:#0e0e0e;color:#f4f1ea;font-family:"Lato","Noto Sans TC",sans-serif;font-weight:300}
+h1,h2,h3,.blat,.hlat,.oc b,.ptile b,.ftr b{font-family:"Playfair Display","Noto Serif TC",Georgia,serif;font-weight:400}
+.mock{background:#c6a87c;color:#141210;letter-spacing:.34em}
+.hdr{background:#0e0e0e;border-bottom:1px solid rgba(198,168,124,.26)}
+.hdrin{display:flex;align-items:center;gap:30px;padding:26px 0}
+.blat{display:block;font-size:27px;letter-spacing:.16em;text-transform:uppercase}
+.bcjk{display:block;font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:#c6a87c;margin-top:5px}
+.nav{display:flex;gap:26px;margin-left:auto;font-family:"Lato",sans-serif;font-size:10.5px;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:#cdc5b8}
+.nav a i{font-style:normal;color:#c6a87c;margin-left:5px;font-size:9.5px}
+.nav a:hover{color:#c6a87c}
+.wx{font-family:"Lato",sans-serif;border:1px solid #c6a87c;color:#c6a87c;padding:14px 22px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;transition:background .3s,color .3s}
+.wx:hover{background:#c6a87c;color:#141210}
+.hero{position:relative;overflow:hidden}
+.hgrid{position:relative;z-index:2;padding:104px 0 84px;max-width:1180px}
+.hfig{position:absolute;inset:0 0 0 auto;width:58%;margin:0;z-index:1}
+.hfig img{height:100%;width:100%;object-fit:cover;opacity:.6}
+.hfig::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0e0e0e 26%,rgba(14,14,14,.78) 52%,rgba(14,14,14,.12))}
 .hfig figcaption{display:none}
-.hgrid::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0d0d0d 34%,rgba(13,13,13,.4) 62%,rgba(13,13,13,.1))}
-.eyebrow{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#c8a97e;margin:0 0 20px}
-h1{font-size:58px;line-height:1.14;font-weight:400;letter-spacing:.01em;margin:0 0 20px}
-.lede{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:15px;line-height:1.9;color:#b9b2a6;max-width:46ch;margin:0 0 30px}
+.eyebrow{font-family:"Lato",sans-serif;font-size:10.5px;letter-spacing:.42em;text-transform:uppercase;color:#c6a87c;margin:0 0 24px}
+h1{font-size:clamp(40px,5.2vw,72px);line-height:1.1;letter-spacing:.005em;max-width:14ch}
+.hlat{font-style:italic;font-size:21px;color:#c6a87c;margin:20px 0 22px;letter-spacing:.02em}
+.lede{font-size:15px;line-height:2;color:#b5ada1;max-width:44ch;margin:0 0 34px}
 .cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;padding:16px 30px;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase}
-.primary{background:#c8a97e;color:#12100e;font-weight:600}
-.ghost{border:1px solid rgba(242,239,233,.45);color:#f2efe9}
-.mini{display:flex;gap:22px;list-style:none;padding:26px 0 0;margin:0;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8d857a}
-.trust{border-top:1px solid rgba(200,169,126,.22);border-bottom:1px solid rgba(200,169,126,.22)}
-.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:0;padding:30px 0}
-.trust .n{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:10px;letter-spacing:.3em;color:#c8a97e}
-.trust b{font-family:"Noto Serif TC","Songti TC","PingFang TC","PMingLiU",serif;font-size:16px;font-weight:400;display:block;margin:6px 0 4px}
-.trust small{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:12px;color:#8d857a;line-height:1.7}
-.sec{padding:64px 0 6px}
-.sechead{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid rgba(200,169,126,.24);padding-bottom:14px;margin-bottom:26px}
-h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;margin:0}
-.sechead a{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#c8a97e}
-.occ{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-.oc{border:1px solid rgba(200,169,126,.26);padding:22px 12px;text-align:center}
-.oc b{display:block;font-size:15px;font-weight:400;letter-spacing:.06em}
-.oc span{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8d857a}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.card{background:#121110}
+.btn{font-family:"Lato",sans-serif;padding:17px 34px;font-size:10.5px;font-weight:400;letter-spacing:.3em;text-transform:uppercase}
+.primary{background:#c6a87c;color:#141210}
+.ghost{border:1px solid rgba(244,241,234,.4);color:#f4f1ea}
+.mini{display:flex;gap:26px;list-style:none;padding:30px 0 0;margin:0;font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8f887d;flex-wrap:wrap}
+.trust{border-top:1px solid rgba(198,168,124,.22);border-bottom:1px solid rgba(198,168,124,.22)}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0;padding:0}
+.trust li{padding:34px 28px 34px 0;border-right:1px solid rgba(198,168,124,.16)}
+.trust li:last-child{border-right:0}
+.trust .n{font-family:"Playfair Display",serif;font-size:13px;color:#c6a87c;letter-spacing:.2em}
+.trust b{display:block;font-family:"Playfair Display","Noto Serif TC",serif;font-size:18px;margin:10px 0 7px}
+.trust small{font-size:12px;color:#8f887d;line-height:1.9;letter-spacing:.02em}
+.sec{padding:76px 0 4px}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid rgba(198,168,124,.26);padding-bottom:16px;margin-bottom:32px}
+h2{font-family:"Lato",sans-serif;font-size:15px;font-weight:500;letter-spacing:5px;text-transform:uppercase;color:#f4f1ea}
+.sechead a{font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c6a87c}
+.occ{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid rgba(198,168,124,.24)}
+.oc{padding:34px 12px;text-align:center;border-right:1px solid rgba(198,168,124,.16);transition:background .4s}
+.oc:last-child{border-right:0}
+.oc:hover{background:rgba(198,168,124,.07)}
+.oc b{display:block;font-size:17px;letter-spacing:.03em;margin-bottom:7px}
+.oc span{font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8f887d}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 20px}
+.card{background:transparent}
 .thumb{position:relative;display:block;overflow:hidden}
-.thumb img{aspect-ratio:4/5;object-fit:cover;width:100%;opacity:.92;transition:opacity .6s,transform .8s}
-.card:hover .thumb img{opacity:1;transform:scale(1.04)}
-.badge{position:absolute;bottom:0;left:0;background:rgba(13,13,13,.86);color:#c8a97e;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;padding:7px 12px}
-.cbody{padding:16px 0 26px}
-.card h3{font-size:16px;font-weight:400;letter-spacing:.06em;margin:0 0 8px}
-.rate{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.14em;color:#c8a97e;display:block;margin-bottom:8px}
-.rate b{color:#b9b2a6}
-.price{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#f2efe9;margin:0}
-.promo{padding:66px 0 10px}
-.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.ptile{border:1px solid rgba(200,169,126,.28);padding:34px}
-.ptile.alt{background:#141210}
-.ptile b{font-size:22px;font-weight:400;letter-spacing:.1em;display:block;margin-bottom:12px}
-.ptile p{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:13.5px;line-height:1.9;color:#b9b2a6;margin:0 0 16px;max-width:34ch}
-.ptile a{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c8a97e}
-.ftr{margin-top:70px;border-top:1px solid rgba(200,169,126,.24);padding:44px 0;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC","Helvetica Neue",Arial,sans-serif;font-size:12.5px;color:#8d857a}
-.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px}
-.ftr b{color:#f2efe9;font-family:"Noto Serif TC","Songti TC","PingFang TC","PMingLiU",serif;font-size:18px;font-weight:400;letter-spacing:.14em;display:block;margin-bottom:12px}
-.ftr p{line-height:1.9;margin:0}
-.ftr h4{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#c8a97e;margin:0 0 12px}
-.ftr a{display:block;padding:3px 0}
-.ftr a:hover{color:#f2efe9}
+.thumb img{aspect-ratio:4/5;object-fit:cover;width:100%;opacity:.94;transition:opacity .7s,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.card:hover .thumb img{opacity:1;transform:scale(1.05)}
+.badge{position:absolute;bottom:0;left:0;background:rgba(14,14,14,.88);color:#c6a87c;font-family:"Lato",sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:8px 13px}
+.cbody{padding:18px 0 22px}
+.card h3{font-family:"Noto Serif TC","Playfair Display",serif;font-size:16.5px;line-height:1.5;letter-spacing:.02em;margin-bottom:9px}
+.rate{display:block;font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.22em;color:#c6a87c;margin-bottom:9px}
+.rate b{color:#8f887d;font-weight:400}
+.price{font-family:"Lato",sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#f4f1ea;margin:0}
+.promo{padding:80px 0 6px}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(198,168,124,.24)}
+.ptile{padding:40px}
+.ptile.alt{background:rgba(198,168,124,.05);border-left:1px solid rgba(198,168,124,.24)}
+.ptile b{display:block;font-size:24px;letter-spacing:.04em;margin-bottom:14px}
+.ptile p{font-size:13.5px;line-height:2;color:#b5ada1;margin:0 0 18px;max-width:34ch}
+.ptile a{font-family:"Lato",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c6a87c;border-bottom:1px solid rgba(198,168,124,.5);padding-bottom:4px}
+.ftr{margin-top:84px;border-top:1px solid rgba(198,168,124,.24);padding:50px 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.ftr b{display:block;font-size:20px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.ftr p{font-size:12.5px;line-height:2.1;color:#8f887d;margin:0}
+.ftr h4{font-family:"Lato",sans-serif;font-size:10px;font-weight:400;letter-spacing:.32em;text-transform:uppercase;color:#c6a87c;margin:0 0 14px}
+.ftr a{display:block;padding:4px 0;font-size:13px;color:#cdc5b8}
+.ftr a:hover{color:#f4f1ea}
 @media(max-width:980px){
- .hfig{position:static;width:100%;margin-top:20px} .hgrid::after{display:none}
- .hcopy{padding:44px 0 0} h1{font-size:34px} .grid{grid-template-columns:repeat(2,1fr)}
- .occ{grid-template-columns:repeat(3,1fr)} .trust ul{grid-template-columns:1fr 1fr} .pgrid,.fgrid{grid-template-columns:1fr}
- .nav,.subrow{display:none} .wx{margin-left:auto;font-size:10px;padding:10px 12px}
+ .hero{overflow:visible} .hfig{position:static;width:100%} .hfig::after{display:none}
+ .hgrid{padding:44px 0 0;max-width:none} h1{font-size:34px;max-width:none} .hlat{font-size:18px}
+ .grid{grid-template-columns:repeat(2,1fr);gap:20px 12px} .occ{grid-template-columns:repeat(3,1fr)}
+ .oc{border-bottom:1px solid rgba(198,168,124,.16)} .trust ul{grid-template-columns:1fr 1fr}
+ .trust li{border-right:0;border-bottom:1px solid rgba(198,168,124,.16);padding:20px 0}
+ .pgrid,.fgrid{grid-template-columns:1fr} .nav{display:none}
+ .wx{margin-left:auto;font-size:9.5px;padding:11px 13px} .sec{padding:48px 0 4px} .sechead h2{font-size:13px;letter-spacing:3.5px}
 }
 
 </style>
 </head>
 <body>
-<div class="mock">設計樣版 MOCKUP C · Haute Florist 風（黑金奢華） — 價錢／評價數字係示範，未上線</div>
+<div class="mock">Mockup C · Haute Florist 風 · 價錢同評價數字係示範，未上線</div>
+
 <header class="hdr">
   <div class="hdrin wrap">
-    <a class="brand" href="#"><span class="bmark">Hello Flowers</span><small>澳門花店 · since 2019</small></a>
+    <a class="brand" href="#">
+      <span class="blat">Hello Flowers</span>
+      <span class="bcjk">澳門花店</span>
+    </a>
     <nav class="nav">        <a href="#">主頁</a>
         <a href="#">花禮一覽</a>
-        <a href="#">按場合</a>
+        <a href="#">花籃</a>
+        <a href="#">蘭花</a>
+        <a href="#">抱抱桶</a>
         <a href="#">關於我們</a>
-        <a href="#">送貨</a>
-        <a href="#">自取</a>
-        <a href="#">聯絡</a></nav>
+        <a href="#">送貨・自取</a></nav>
     <a class="wx" href="#">WeChat 落單</a>
+    <button class="mbtn" type="button">☰ 選單</button>
   </div>
-  <div class="subrow"><div class="wrap axrow">        <a class="ax" href="#">按場合</a>
-        <a class="ax" href="#">按花種</a>
-        <a class="ax" href="#">按預算</a>
-        <a class="ax" href="#">按顏色</a></div></div>
 </header>
-<div class="ticker"><div class="wrap">今日落單 → 市區即日送到 ｜ 開張花籃・抱抱桶・蘭花 ｜ WeChat 落單有專人跟進</div></div>
+
 <section class="hero">
   <div class="wrap hgrid">
     <div class="hcopy">
-      <p class="eyebrow">澳門本地花店 · 人手綁製</p>
+      <p class="eyebrow">澳門本地花店 · EST. 2019</p>
       <h1>今日想送花，<br>交俾花藝師發辦</h1>
-      <p class="lede">講低場合、日子同預算，花藝師幫你揀當日最新鮮嘅花材，WeChat 一對一確認。</p>
+      <p class="hlat">Fresh. Hand-tied. Same day.</p>
+      <p class="lede">講低場合、日子同預算，花藝師幫你揀當日最新鮮嘅花材，WeChat 一對一確認先落單。</p>
       <div class="cta"><a class="btn primary" href="#">睇花禮一覽</a><a class="btn ghost" href="#">WeChat 問價</a></div>
-      <ul class="mini"><li>當日新鮮花材</li><li>可到店自取</li><li>送到前可確認</li></ul>
-      
+      <ul class="mini"><li>即日新鮮花材</li><li>可到店自取</li><li>送出前可確認</li></ul>
     </div>
-    <figure class="hfig"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DbDXJdpD36m.jpg" alt="精選花束"><figcaption>精選鮮花花束｜花藝師發辦</figcaption></figure>
+    <figure class="hfig"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DbDXJdpD36m.jpg" alt="精選花束"><figcaption><span>精選鮮花花束</span>花藝師發辦 · 每日新鮮</figcaption></figure>
   </div>
 </section>
-<section class="trust"><div class="wrap"><ul>        <li><span class="n">01</span><b>人手綁製</b><small>花藝師當日新鮮配搭</small></li>
-        <li><span class="n">02</span><b>WeChat 一對一</b><small>報價同建議花材</small></li>
-        <li><span class="n">03</span><b>自取或送貨</b><small>澳門市區同離島</small></li>
+<section class="trust"><div class="wrap"><ul>        <li><span class="n">01</span><b>人手綁製</b><small>花藝師即日新鮮配搭</small></li>
+        <li><span class="n">02</span><b>WeChat 一對一</b><small>報價、揀花材、揀日子</small></li>
+        <li><span class="n">03</span><b>自取 / 送貨</b><small>澳門市區同離島</small></li>
         <li><span class="n">04</span><b>2019 年開業</b><small>澳門本地花店</small></li></ul></div></section>
 <section class="sec"><div class="wrap">
-  <div class="sechead"><h2>按場合揀花</h2><a href="#">全部場合 →</a></div>
-  <div class="occ">        <a class="oc" href="#"><b>生日・日常</b><span>花束</span></a>
-        <a class="oc" href="#"><b>開張・升職</b><span>花籃</span></a>
+  <div class="sechead"><h2>按場合揀花</h2><a href="#">全部場合</a></div>
+  <div class="occ">        <a class="oc" href="#"><b>生日・日常</b><span>13 款</span></a>
+        <a class="oc" href="#"><b>開張・升職</b><span>3 款</span></a>
         <a class="oc" href="#"><b>情人節</b><span>7 款</span></a>
         <a class="oc" href="#"><b>母親節</b><span>14 款</span></a>
-        <a class="oc" href="#"><b>畢業</b><span>3 款</span></a>
+        <a class="oc" href="#"><b>畢業花束</b><span>3 款</span></a>
         <a class="oc" href="#"><b>蘭花送禮</b><span>4 款</span></a></div>
 </div></section>
 <section class="sec"><div class="wrap">
-  <div class="sechead"><h2>人氣花禮</h2><a href="#">睇全部 58 款 →</a></div>
+  <div class="sechead"><h2>人氣花禮</h2><a href="#">睇全部 58 款</a></div>
   <div class="grid">
       <article class="card">
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DbDXJdpD36m.jpg" alt="精選鮮花花束｜花藝師發辦" loading="lazy"><span class="badge">熱賣</span></a>
         <div class="cbody">
           <h3>精選鮮花花束｜花藝師發辦</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -149,7 +164,7 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DW1WYJ6Exzt.jpg" alt="奶油向日葵花束" loading="lazy"><span class="badge">NEW</span></a>
         <div class="cbody">
           <h3>奶油向日葵花束</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -157,7 +172,7 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWnN6kZk6ww.jpg" alt="沿路盛開花束｜季節鮮花花束" loading="lazy"><span class="badge">限量</span></a>
         <div class="cbody">
           <h3>沿路盛開花束｜季節鮮花花束</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -165,7 +180,7 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DWBwmY7DZMQ.jpg" alt="浪漫鬱金香混花花束" loading="lazy"><span class="badge">店長推介</span></a>
         <div class="cbody">
           <h3>浪漫鬱金香混花花束</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -173,7 +188,7 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DS_pI32E9ki.jpg" alt="藍色蘭花混花花束" loading="lazy"></a>
         <div class="cbody">
           <h3>藍色蘭花混花花束</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -181,7 +196,7 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DPs06BYE2JK.jpg" alt="幸福棒花💕" loading="lazy"><span class="badge">NEW</span></a>
         <div class="cbody">
           <h3>幸福棒花💕</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -189,7 +204,7 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DNjyaRRI_10.jpg" alt="迷你花束系列｜Mini Bouquet" loading="lazy"></a>
         <div class="cbody">
           <h3>迷你花束系列｜Mini Bouquet</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
@@ -197,21 +212,21 @@ h2{font-size:30px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
         <a class="thumb" href="#"><img src="https://jeffreykan97work-cmd.github.io/helloflowers-macau/images/products/DL8quruSm6Y.jpg" alt="Crybaby 花束｜不一樣的版本" loading="lazy"><span class="badge">熱賣</span></a>
         <div class="cbody">
           <h3>Crybaby 花束｜不一樣的版本</h3>
-          
+          <span class="rate">★★★★★ <b>4.9</b> · 23 則</span>
           <p class="price">HK$ 680 起</p>
         </div>
       </article>
   </div>
 </div></section>
 <section class="promo"><div class="wrap pgrid">
-  <div class="ptile"><b>開張花籃</b><p>公司、店舖開張，講低預算同日期就得。</p><a href="#">睇花籃 →</a></div>
-  <div class="ptile alt"><b>長期客戶</b><p>前台擺花、定期送花，可安排月計方案。</p><a href="#">傾方案 →</a></div>
+  <div class="ptile"><b>開張花籃</b><p>公司、店舖開張，講低預算同日期就得，專人同你對款式。</p><a href="#">睇花籃 →</a></div>
+  <div class="ptile alt"><b>長期客戶</b><p>前台擺花、定期送花、節日批量，可安排月計方案。</p><a href="#">傾方案 →</a></div>
 </div></section>
 <footer class="ftr"><div class="wrap fgrid">
-  <div><b>Hello Flowers Macau</b><p>澳門俾利喇街 89 號歡樂大廈地下 A 舖<br>每日 10:00–19:30 · 6611 0880</p></div>
+  <div><b>Hello Flowers</b><p>澳門俾利喇街 89 號歡樂大廈地下 A 舖<br>每日 10:00 – 19:30 · 6611 0880<br>IG @helloflowersmacau2019</p></div>
   <div><h4>按場合</h4><a href="#">生日・日常</a><a href="#">開張・升職</a><a href="#">情人節</a><a href="#">母親節</a></div>
   <div><h4>按花種</h4><a href="#">玫瑰</a><a href="#">鬱金香</a><a href="#">蝴蝶蘭</a><a href="#">康乃馨</a></div>
-  <div><h4>服務</h4><a href="#">送貨資訊</a><a href="#">到店自取</a><a href="#">聯絡我們</a><a href="#">IG @helloflowersmacau2019</a></div>
+  <div><h4>服務</h4><a href="#">送貨資訊</a><a href="#">到店自取</a><a href="#">聯絡我們</a><a href="#">企業客戶</a></div>
 </div></footer>
 </body>
 </html>
